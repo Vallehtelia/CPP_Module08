@@ -1,4 +1,4 @@
-NAME = whatever
+NAME = easyfind
 SRC = main.cpp
 OBJ = $(SRC:.cpp=.o)
 COMPILER = c++
