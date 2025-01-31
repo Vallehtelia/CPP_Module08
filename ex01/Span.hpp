@@ -25,6 +25,8 @@ class Span
 		template <typename T>
 		void	addNumbers(T begin, T end)
 		{
-
+			if (std::distance(begin, end) + numbers.size() > maxNumberCount)
+				throw std::runtime_error("Error: Numbers dont fit in the Span!");
+			numbers.insert(numbers.end(), begin, end);
 		}
 };
